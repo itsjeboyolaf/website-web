@@ -83,7 +83,7 @@ main article header {
 }
 
 main article header img {
-    width: 100%;
+    max-width: 100%;
 }
 
 main article header h3 {
@@ -131,7 +131,7 @@ footer ul {
     
 }
 
-@media only screen and (min-width: 56em) and ( max-width:70em){
+@media only screen and (min-width: 56em){
     
     header li a{
         visibility: visible;
@@ -160,32 +160,5 @@ footer ul {
 }       
 }
 
-@media only screen and (min-width: 71,5em){
-    
-    header li a{
-        visibility: visible;
-        white-space: nowrap;
-        margin-right: 2em;
-        text-align: center;
-    }
-    nav ul{
-        height: 5em;
-    }
-    
-    main{
-        display:grid;
-        grid-template-columns: 30VW 70VW;
-    }
-    main section{
-     grid-column: 2;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-column-gap: 1em;
-     margin-right: 1.5em;
-    }
-    main section article{  
-
-}       
-}
 
 
