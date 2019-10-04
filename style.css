@@ -22,6 +22,7 @@ nav ul {
     align-items: center;
     position: fixed;
     top: 0;
+    height: 3em;
 }
 
 header li {
@@ -39,7 +40,8 @@ header li a svg {
     top:0;
     left: 0;
     height:100%;
-    width: em; 
+    width: 2em;
+    display: block;
 }
 
 
@@ -129,28 +131,61 @@ footer ul {
     
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 56em) and ( max-width:70em){
+    
     header li a{
         visibility: visible;
+        white-space: nowrap;
+        margin-right: 2em;
+        text-align: center;
+    }
+    nav ul{
+        height: 5em;
+    }
+    
+    main{
+        display:grid;
+        grid-template-columns: 30VW 70VW;
     }
     main section{
-        display: grid;
-        grid-template-columns: 30VW 45VW 45VW;
-        grid-template-rows: 30VH 30VH 30VH 30VH;
-        justify-content: flex-start;
-        
-        
+     grid-column: 2;
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-column-gap: 1em;
+     margin-right: 1.5em;
     }
     main section article{
-    margin: 2%;
-    width: 30vw;
-    max-width: 17em;
-    max-height: 20%;
-    grid-column: 2 / 3;
-    justify-content: flex-start;
-    overflow: visible;
+     
 
+}       
+}
+
+@media only screen and (min-width: 71,5em){
+    
+    header li a{
+        visibility: visible;
+        white-space: nowrap;
+        margin-right: 2em;
+        text-align: center;
+    }
+    nav ul{
+        height: 5em;
     }
     
-    
+    main{
+        display:grid;
+        grid-template-columns: 30VW 70VW;
+    }
+    main section{
+     grid-column: 2;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 1em;
+     margin-right: 1.5em;
+    }
+    main section article{  
+
+}       
 }
+
+
