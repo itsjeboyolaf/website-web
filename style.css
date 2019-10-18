@@ -47,6 +47,7 @@ header li a svg {
 
 header li:first-child {
     margin-right: auto;
+    margin-left: -2em;
     
 }
 header li:first-child a {
@@ -67,32 +68,40 @@ nav a {
 
 /* ================MAIN================*/
 main {
-    margin-top: 3.5em;
+    margin-top: -1em;
 }
 
-main section {}
+main form{
+    visibility: hidden;
+}
 
 main article {
     background-color: lightgray;
     overflow: hidden;
     margin-top: 1em;
+    display: grid;
+    max-height: 25em;
+    grid-template-rows: 40% 20% 20% 20%
 }
 
 main article header {
     display: flex;
+    grid-row: 1;
 }
 
 main article header img {
-    max-width: 100%;
+    width: 100%;
 }
 
 main article header h3 {
     margin-left: -95%;
     color: white;
+    grid-row: 2;
 }
 
 main article p {
-    padding: 2%
+    padding: 2%;
+    grid-row:3;
 }
 
 main article ul {
@@ -100,6 +109,7 @@ main article ul {
     justify-content: space-between;
     list-style: none;
     width: 100%;
+    grid-row: 4;
 }
 
 main article ul li {
@@ -136,14 +146,39 @@ footer ul {
     header li a{
         visibility: visible;
         white-space: nowrap;
-        margin-right: 2em;
+        margin-right: 2 em;
         text-align: center;
     }
     nav ul{
         height: 5em;
     }
     
+    header li a svg {
+    visibility: visible;
+    top:0;
+    left: 0;
+    height:100%;
+    width: 2em;
+    display: block;
+    }
+    
+    
+    header li:first-child {
+    margin-right: auto;
+    }
+    
+    header li a svg {
+    visibility: visible;
+    top:0;
+    left: 0;
+    height:100%;
+    width: 2em;
+    display: block;
+    margin-left: -1em;
+}
+    
     main{
+        margin-top: 2em;
         display:grid;
         grid-template-columns: 20VW 10VW 70VW;
     }
@@ -167,7 +202,10 @@ footer ul {
     main form p{
         display:flex;
     }
+
+main form{
+    visibility: visible;
 }
-
-
+    
+}
 
