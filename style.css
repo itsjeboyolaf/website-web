@@ -42,14 +42,14 @@ nav ul {
     top: 0;
     left: 0;
     height: 100%;
-    width: 2em;
+    width: 2.5em;
     display: block;
 }
 
 
 .TopBar li:first-child {
     margin-right: auto;
-    margin-left: -2em;
+    margin-left: -1.5em;
 
 }
 
@@ -170,18 +170,24 @@ footer ul {
 
 @media only screen and (min-width: 56em) {
 
-    header li a {
+    .TopBar{
+        max-height: 70VH;
+        margin: 0 0 -15em 0;
+    }
+    
+    .TopBar li a {
         visibility: visible;
         white-space: nowrap;
-        margin-right: 2 em;
+        margin-right: 2em;
         text-align: center;
     }
 
     nav ul {
-        height: 5em;
+        height: 3em;
+        background-color: white;
     }
 
-    header li a svg {
+    .TopBar li a svg {
         visibility: visible;
         top: 0;
         left: 0;
@@ -191,18 +197,22 @@ footer ul {
     }
 
 
-    header li:first-child {
+    .TopBar li:first-child {
         margin-right: auto;
     }
 
-    header li a svg {
+    .TopBar li a svg {
         visibility: visible;
         top: 0;
         left: 0;
         height: 100%;
-        width: 2em;
+        width: 2.5em;
         display: block;
         margin-left: -1em;
+    }
+    
+    .HeaderImg{
+        visibility: visible;
     }
 
     main {
