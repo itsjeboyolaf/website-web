@@ -75,14 +75,14 @@ main form{
     visibility: hidden;
 }
 
-main article {
+main section article {
     background-color: lightgray;
     overflow: hidden;
     margin-top: 1em;
     display: grid;
-    max-height: 35vh;
+    max-height: 50vh;
     max-width: 90vw;
-    grid-template-rows: 40% 20% 20% 20%;
+    grid-template-rows: 40% 15% 30% 15%;
     margin: auto;
     margin-bottom: 1em;
 }
@@ -94,6 +94,7 @@ main article header {
 
 main article header img {
     width: 100%;
+    height: 100%;
 }
 
 main article header h3 {
@@ -104,27 +105,29 @@ main article header h3 {
 
 main article p {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 1em;
     grid-row:3;
+    height: 100%;
+    overflow: hidden;
 }
 
 main article ul {
-    display: block;
-    grid-template-columns: 1fr 1fr;
     list-style: none;
     width: 100%;
     grid-row: 4;
+    margin: 1em 0 0 -1.2em;
+    display: block;
 }
 
 main article ul li {
-    margin: 1em 4.5em 0 0;
+    height: 100%;
     display: inline-block;
+    margin: 0 0.36em 0 0;
 }
 
 
 main article footer {
-    grid-row: 4;
-    display: inline;
+    margin: 1em 0 0 1em; 
 }
 
 /* ================FOOTER================*/
