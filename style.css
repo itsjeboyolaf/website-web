@@ -80,8 +80,11 @@ main article {
     overflow: hidden;
     margin-top: 1em;
     display: grid;
-    max-height: 25em;
-    grid-template-rows: 40% 20% 20% 20%
+    max-height: 35vh;
+    max-width: 90vw;
+    grid-template-rows: 40% 20% 20% 20%;
+    margin: auto;
+    margin-bottom: 1em;
 }
 
 main article header {
@@ -105,16 +108,18 @@ main article p {
 }
 
 main article ul {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    grid-template-columns: 1fr 1fr;
     list-style: none;
     width: 100%;
     grid-row: 4;
 }
 
 main article ul li {
-    margin: auto;
+    margin: 1em 4.5em 0 0;
+    display: inline-block;
 }
+
 
 main article footer {
     padding: 3%;
@@ -178,14 +183,14 @@ footer ul {
 }
     
     main{
-        margin-top: 2em;
+        margin-top: 5em;
         display:grid;
-        grid-template-columns: 20VW 10VW 70VW;
+        grid-template-columns: 20VW 5VW 75VW;
     }
     main section{
      grid-column: 3;
      display: grid;
-     grid-template-columns: 50% 50%;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
      grid-column-gap: 1em;
      margin-right: 1.5em;
     }
@@ -195,7 +200,7 @@ footer ul {
     main form{
         grid-column: 1;
         background-color: #ffc917;
-        margin: 2em 3em 2em 1em;
+        margin: 1em 3em 1em 4em;
         max-height: 80VH;
         padding 1em;
     }
