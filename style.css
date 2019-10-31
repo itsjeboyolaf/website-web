@@ -103,7 +103,8 @@ main article header h3 {
 }
 
 main article p {
-    padding: 2%;
+    padding: 0;
+    margin: 0;
     grid-row:3;
 }
 
@@ -122,7 +123,8 @@ main article ul li {
 
 
 main article footer {
-    padding: 3%;
+    grid-row: 4;
+    display: inline;
 }
 
 /* ================FOOTER================*/
