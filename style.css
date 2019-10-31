@@ -25,37 +25,40 @@ nav ul {
     height: 3em;
 }
 
-header li {
+.TopBar li {
     margin: 0 1em 0 0;
 }
-header li a {
+
+.TopBar li a {
     visibility: hidden;
-    display:block;
+    display: block;
     position: relative;
-    width:2em;
+    width: 2em;
     height: 2.5em;
 }
-header li a svg {
+
+.TopBar li a svg {
     visibility: visible;
-    top:0;
+    top: 0;
     left: 0;
-    height:100%;
+    height: 100%;
     width: 2em;
     display: block;
 }
 
 
-header li:first-child {
+.TopBar li:first-child {
     margin-right: auto;
     margin-left: -2em;
-    
+
 }
-header li:first-child a {
-    width:auto;
+
+.TopBar li:first-child a {
+    width: auto;
     margin-top: -1.5em;
 }
 
-header nav ul li img {
+.TopBar nav ul li img {
     width: 4em;
     visibility: visible;
 }
@@ -65,13 +68,21 @@ nav a {
     text-decoration: none;
     color: black;
 }
+.TopBar{
+    max-height: 2.5em;
+    overflow: hidden;
+}
+.HeaderImg{
+    visibility: hidden;
+}
 
 /* ================MAIN================*/
 main {
     margin-top: -1em;
 }
 
-main form{
+
+main form {
     visibility: hidden;
 }
 
@@ -106,7 +117,7 @@ main article header h3 {
 main article p {
     padding: 0;
     margin: 0 0 0 1em;
-    grid-row:3;
+    grid-row: 3;
     height: 100%;
     overflow: hidden;
 }
@@ -128,13 +139,12 @@ main article ul li {
 
 main article ul li:second-child {
     height: 100%;
-    grid: 2;
     margin: 0 0.36em 0 0;
 }
 
 
 main article footer {
-    margin: 1em 0 0 1em; 
+    margin: 1em 0 0 1em;
 }
 
 /* ================FOOTER================*/
@@ -150,79 +160,94 @@ footer ul {
     justify-content: space-between;
 }
 
-@media only screen and (min-width: 600px) and ( max-width: 899px){
-    body{
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    body {
         color: red
     }
-    
-    
+
+
 }
 
-@media only screen and (min-width: 56em){
-    
-    header li a{
+@media only screen and (min-width: 56em) {
+
+    header li a {
         visibility: visible;
         white-space: nowrap;
         margin-right: 2 em;
         text-align: center;
     }
-    nav ul{
+
+    nav ul {
         height: 5em;
     }
-    
+
     header li a svg {
-    visibility: visible;
-    top:0;
-    left: 0;
-    height:100%;
-    width: 2em;
-    display: block;
+        visibility: visible;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 2em;
+        display: block;
     }
-    
-    
+
+
     header li:first-child {
-    margin-right: auto;
+        margin-right: auto;
     }
-    
+
     header li a svg {
-    visibility: visible;
-    top:0;
-    left: 0;
-    height:100%;
-    width: 2em;
-    display: block;
-    margin-left: -1em;
-}
-    
-    main{
+        visibility: visible;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 2em;
+        display: block;
+        margin-left: -1em;
+    }
+
+    main {
         margin-top: 5em;
-        display:grid;
-        grid-template-columns: 20VW 5VW 75VW;
+        display: grid;
+        grid-template-columns: 20VW 5VW 74VW 1VW;
     }
-    main section{
-     grid-column: 3;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-column-gap: 1em;
-     margin-right: 1.5em;
+
+    main form {
+        width: 90%;
     }
-    main section article{
-     
-}    
-    main form{
+
+    main section {
+        margin-top: 1em;
+        width: 100%;
+        grid-column: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        margin-right: 1.5em;
+    }
+
+    main section article {
+        width: 100%;
+    }
+
+    main form {
         grid-column: 1;
         background-color: #ffc917;
         margin: 1em 3em 1em 4em;
         max-height: 80VH;
         padding 1em;
     }
-    main form p{
-        display:flex;
+
+    main form p {
+        display: flex;
     }
 
-main form{
-    visibility: visible;
-}
-    
-}
+    main form {
+        visibility: visible;
+    }
 
+    .footer{
+        height: 4em;
+        
+    }
+
+}
