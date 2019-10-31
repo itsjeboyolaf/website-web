@@ -116,12 +116,19 @@ main article ul {
     width: 100%;
     grid-row: 4;
     margin: 1em 0 0 -1.2em;
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr 1fr
 }
 
 main article ul li {
     height: 100%;
-    display: inline-block;
+    grid: 1;
+    margin: 0 0.36em 0 0;
+}
+
+main article ul li:second-child {
+    height: 100%;
+    grid: 2;
     margin: 0 0.36em 0 0;
 }
 
