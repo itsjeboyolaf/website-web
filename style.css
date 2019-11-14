@@ -90,7 +90,9 @@ main h1 {
 }
 
 main form {
-    visibility: hidden;
+    margin: 4em 0 0 0;
+    height: 40VH;
+    background-color: #ffc917;
 }
 
 main section article {
@@ -153,6 +155,10 @@ main article ul li:second-child {
 main article footer {
     margin: 1em 0 0 1em;
 }
+main article footer a{
+    text-decoration: none;
+    color: #003082;
+}
 
 /* ================FOOTER================*/
 .footer {
@@ -167,14 +173,214 @@ footer ul {
     justify-content: space-between;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 899px) {
-    body {
-        color: red
+
+/*========================Tablet=====================*/
+@media only screen and (min-width: 600px) and (max-width: 55em) {
+    .TopBar li a {
+        visibility: visible;
+        white-space: nowrap;
+        margin: 1em 3em 0 0;
+        text-align: center;
+    }
+
+    nav ul {
+        height: 4em;
+        background-color: white;
+    }
+
+    .TopBar li:first-child {
+        margin-right: auto;
+    }
+
+    .TopBar li a svg {
+        visibility: visible;
+        margin-top: -2em;
+        left: 0;
+        height: 100%;
+        width: 2.5em;
+        display: block;
+    }
+
+
+    .HeaderImg {
+        visibility: visible;
+    }
+
+    /* =============== DE MAIN =================*/
+
+    main {
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: 5vw 90VW 5VW;
+    }
+
+    main h1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin: 0;
+
+    }
+
+    main section {
+        margin-top: 1em;
+        width: 100%;
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+
+    /*============== First item gerestyled voor tablet =================*/
+    main section article:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 1fr 1fr;
+        background-image: url(images/moe.jpg);
+        background-size: cover;
+    }
+
+    main section article:first-child header {
+        border-radius: 15px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 50%;
+        height: 100%;
+        background-color: #ffc917;
+        margin: 2em 0em 0em 1em;
+
+    }
+
+    main section article:first-child header img {
+        visibility: hidden;
+        overflow: hidden;
+        width: 0%;
+
+    }
+
+    main section article:first-child header h3 {
+        color: white;
+        font-size: 1.3em;
+        margin: 0 0 0 1em;
+
+        text-align: center;
+        max-height: 50%;
+        color: #003082;
+    }
+
+    main section article:first-child p {
+        font-size: 0.9em;
+        padding: 0;
+        margin: -2em 0em 0em 2.5em;
+        grid-row: 3;
+        height: 90%;
+        width: 80%;
+        overflow: hidden;
+    }
+
+    main section article:first-child ul {
+        list-style: none;
+        width: 100%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 3em 0 0 10em;
+        font-size: 0.8em;
+
+    }
+
+    main section article:first-child footer {
+        background-color: #ffc917;
+        max-width: 40%;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: -1em 0 1em 9em;
+        border-radius: 15px;
+        height: 40%;
+        padding: 1.5em 0.5em 2em 2em;
+    }
+
+    @keyframes YellowHover {
+        from {
+            background-color: #ffc917;
+            box-shadow: 0em 0em;
+        }
+
+        to {
+            background-color: #ecb617;
+            box-shadow: 0.2em 0.2em;
+        }
+    }
+
+    main section article:first-child footer:hover {
+        animation-name: YellowHover;
+        animation-duration: 0.5s;
+
+    }
+
+    main section article:first-child footer a {
+        text-decoration: none;
+        color: #003082;
+    }
+    
+    /*===================einde first item stylen=================*/
+
+    main section article {
+        width: 100%;
+    }
+
+    main form {
+        background-color: #ffc917;
+        margin: 1em 0 0 0;
+        width: 100VW;
+        padding 1em;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        visibility: visible;
+        padding: 0 1em 0 1em;
+        height: 110%;
+        display: block;
+    }
+    
+  
+    main form input[type=input]{
+        display: block;
+        margin: 0 0 1em 0;
+    }
+    main form input[type=range]{
+        width: 20%;
+        height: 10%;
+        margin: 0;
+        display: block;
+        
+    }
+    main form label{
+        display: inline-block;
+        margin: 0 0 0 0;
+    }
+    main form label:first-child{
+        display: block;
+        margin: 1em 0 0.5em 0;
+    }
+    main form p{
+        display: block;
+        margin: 0 0 0 0;
+    }
+    
+    .footer {
+        height: 4em;
+
     }
 
 
 }
-
+/*=========================Desktop====================*/
 @media only screen and (min-width: 56em) {
 
     .TopBar li a {
@@ -333,7 +539,7 @@ footer ul {
 
     }
 
-    /*einde first item stylen */
+    /*===================einde first item stylen=================*/
 
     main section article {
         width: 100%;
@@ -342,24 +548,48 @@ footer ul {
     main form {
         background-color: #ffc917;
         margin: 1em 1em 0em 4em;
-        max-height: 80VH;
+        height: 80VH;
         padding 1em;
         grid-column-start: 1;
         grid-column-end: 4;
         visibility: visible;
         padding: 1em;
         display: grid;
+        grid-template-columns: 10% 80% 10%;
     }
-
-
-    main form p {
-        display: flex;
+    
+    main form input{
+        grid-column:2;
     }
-
-    main form {
-        visibility: visible;
+    main form input[type=checkbox] {
+        grid-column: 1;
     }
-
+    main form input[type=input]{
+        height: 80%;
+        margin: -1em 0 0 0;
+    }
+    main form label{
+        grid-column: 2;
+        margin: 0 0 -1em 0;
+    }
+    main form p{
+        grid-column: 2;
+        height: 20%;
+        margin: -1.5em 0 0 0;
+    }
+    
+    main form label:first-child {
+        grid-column: 2;
+    }
+    input[type=range]{
+        height: 20%   
+    }
+    main form h3{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: -1em 0 0 0;
+    }
+    
     .footer {
         height: 4em;
 
