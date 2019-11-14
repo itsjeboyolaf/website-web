@@ -175,7 +175,7 @@ footer ul {
 
 
 /*========================Tablet=====================*/
-@media only screen and (min-width: 37,5em) and (max-width: 55em) {
+@media only screen and (min-width: 600px) and (max-width: 55em) {
     .TopBar li a {
         visibility: visible;
         white-space: nowrap;
