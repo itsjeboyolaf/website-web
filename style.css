@@ -38,10 +38,6 @@ nav ul {
     height: 2.5em;
 }
 
-.TopBar li a:hover{
-    background-color: gray;
-}
-
 .TopBar li a svg {
     visibility: visible;
     top: 0;
@@ -170,6 +166,7 @@ main article footer a{
         padding 1em;
         margin 4em 0 0 0;
         width: 100VW;
+        height: 60VH;
         grid-column-start: 1;
         grid-column-end: 4;
         visibility: visible;
