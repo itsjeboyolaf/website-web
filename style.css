@@ -17,7 +17,7 @@ nav ul {
     margin: 0;
     list-style: none;
     width: 100vw;
-    background-color: #ffc917;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +36,10 @@ nav ul {
     position: relative;
     width: 2em;
     height: 2.5em;
+}
+
+.TopBar li a:hover{
+    background-color: gray;
 }
 
 .TopBar li a svg {
@@ -184,6 +188,13 @@ main article footer a{
         height: 100%;
         margin: 0 0 0 0;
     }
+    
+main form input[type=input]:active{
+    border-style: solid;
+    border-color: #ffc917;
+}
+
+
     main form label{
         grid-column: 2;
         margin: 0 0 0 0;
@@ -381,40 +392,49 @@ footer ul {
         width: 100%;
     }
 
-    main form {
+ main form {
         background-color: #ffc917;
-        margin: 1em 0 0 0;
-        width: 100VW;
         padding 1em;
+        margin 4em 0 0 0;
+        width: 100VW;
         grid-column-start: 1;
         grid-column-end: 4;
         visibility: visible;
-        padding: 0 1em 0 1em;
+        padding: 1em;
         display: grid;
         grid-template-columns: 10% 80% 10%;
     }
     
-  
-    main form input[type=input]{
-        display: block;
-        margin: 0 0 2em 0;
+    main form input{
+        grid-column:2;
     }
-    main form input[type=range]{
-        width: 20%;
+    main form input[type=checkbox] {
+        grid-column: 1;
+    }
+    main form input[type=input]{
         height: 100%;
-        margin: 0;
-        display: block;
+        margin: 0 0 1em 0;
     }
     main form label{
-        display: inline-block;
-        margin: 0 0 0 0;
-    }
-    main form label:first-child{
-        display: block;
-        margin: 0.5em 0 0.5em 0;
+        grid-column: 2;
+        margin: 0 0 0 -2em;
     }
     main form p{
-        display: block;
+        grid-column: 2;
+        height: 20%;
+        margin: 0 0 0 0;
+    }
+    
+    main form label:first-child {
+        grid-column: 2;
+    }
+    input[type=range]{
+        height: 150%;
+        width: 40%;
+    }
+    main form h3{
+        grid-column-start: 1;
+        grid-column-end: 4;
         margin: 0 0 0 0;
     }
     
@@ -572,7 +592,7 @@ footer ul {
         }
     }
 
-    main section article:first-child footer:hover {
+    main section article:first-child footer:hover{
         animation-name: YellowHover;
         animation-duration: 0.5s;
 
