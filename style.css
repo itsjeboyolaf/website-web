@@ -159,7 +159,53 @@ main article footer a{
     text-decoration: none;
     color: #003082;
 }
+/*====================FORM==============*/
 
+ main form {
+        background-color: #ffc917;
+        padding 1em;
+        margin 4em 0 0 0;
+        width: 100VW;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        visibility: visible;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+    }
+    
+    main form input{
+        grid-column:2;
+    }
+    main form input[type=checkbox] {
+        grid-column: 1;
+    }
+    main form input[type=input]{
+        height: 100%;
+        margin: 0 0 0 0;
+    }
+    main form label{
+        grid-column: 2;
+        margin: 0 0 0 0;
+    }
+    main form p{
+        grid-column: 2;
+        height: 20%;
+        margin: 0 0 0 0;
+    }
+    
+    main form label:first-child {
+        grid-column: 2;
+    }
+    input[type=range]{
+        height: 150%;
+        width: 40%;
+    }
+    main form h3{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 0 0 0;
+    }
 /* ================FOOTER================*/
 .footer {
     background-color: #ffc917;
@@ -344,19 +390,20 @@ footer ul {
         grid-column-end: 4;
         visibility: visible;
         padding: 0 1em 0 1em;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
     }
     
   
     main form input[type=input]{
         display: block;
-        margin: 0 0 1em 0;
+        margin: 0 0 2em 0;
     }
     main form input[type=range]{
         width: 20%;
-        height: 10%;
+        height: 100%;
         margin: 0;
         display: block;
-        
     }
     main form label{
         display: inline-block;
@@ -364,7 +411,7 @@ footer ul {
     }
     main form label:first-child{
         display: block;
-        margin: 1em 0 0.5em 0;
+        margin: 0.5em 0 0.5em 0;
     }
     main form p{
         display: block;
@@ -422,8 +469,8 @@ footer ul {
 
     main h1 {
         grid-column-start: 2;
-        grid-column-end: 4;
-        margin: 0em 0em 0em 3em;
+        grid-column-end: 5;
+        margin: 0em 0em 0em 1.5em;
 
     }
 
@@ -545,7 +592,8 @@ footer ul {
 
     main form {
         background-color: #ffc917;
-        margin: 1em 1em 0em 4em;
+        margin: 1em 1em 0em 3em;
+        width: 80%;
         height: 80VH;
         padding 1em;
         grid-column-start: 1;
