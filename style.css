@@ -155,70 +155,134 @@ main article ul li:second-child {
 main article footer {
     margin: 1em 0 0 1em;
 }
-main article footer a{
+
+main article footer a {
     text-decoration: none;
     color: #003082;
 }
-/*====================FORM==============*/
 
- main form {
-        background-color: #ffc917;
-        padding 1em;
-        margin 4em 0 0 0;
-        width: 100VW;
-        height: 60VH;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        visibility: visible;
-        padding: 1em;
-        display: grid;
-        grid-template-columns: 10% 80% 10%;
-    }
+/*====================FORM (filter)==============*/
+
+main form {
+    background-color: #ffc917;
+    padding 1em;
+    margin 4em 0 0 0;
+    width: 100VW;
+    height: 8VH;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    visibility: visible;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
     
-    main form input{
-        grid-column:2;
-    }
-    main form input[type=checkbox] {
-        grid-column: 1;
-    }
-    main form input[type=input]{
-        height: 100%;
-        margin: 0 0 0 0;
-    }
-    
-main form input[type=input]:active{
-    border-style: solid;
-    border-color: #ffc917;
+}
+
+main form input {
+    visibility: hidden;
+}
+
+main form label {
+    visibility: hidden;
+}
+
+main form p {
+    visibility: hidden;
+}
+
+main form h3 {
+    visibility: hidden;
+}
+main form label:first-child {
+    grid-column: 2;
+    visibility: hidden;
+}
+
+main form a {
+    visibility: visible;
+    grid-column: 3;
+}
+
+.dropdown {
+    background-color: #ffc917;
+    margin 4em 0 1em 0;
+    width: 100VW;
+    height: 60VH;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    visibility: visible;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.dropdown a{
+    grid-column: 3;
+    visibility: visible;
 }
 
 
-    main form label{
-        grid-column: 2;
-        margin: 0 0 0 0;
-    }
-    main form p{
-        grid-column: 2;
-        height: 20%;
-        margin: 0 0 0 0;
-    }
-    
-    main form label:first-child {
-        grid-column: 2;
-    }
-    input[type=range]{
-        height: 150%;
-        width: 40%;
-    }
-    main form h3{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        margin: 0 0 0 0;
-    }
+.dropdown input {
+    grid-column: 2;
+    visibility: visible;
+}
+
+.dropdown input[type=checkbox] {
+    grid-column: 1;
+    visibility: visible;
+}
+
+.dropdown input[type=input] {
+    height: 100%;
+    margin: 0 0 0 0;
+    visibility: visible;
+}
+
+.dropdown input[type=input]:active {
+    border-style: solid;
+    border-color: #ffc917;
+    visibility: visible;
+}
+
+
+.dropdown label {
+    grid-column: 2;
+    margin: 0 0 0 0;
+    visibility: visible;
+}
+
+.dropdown p {
+    grid-column: 2;
+    height: 20%;
+    margin: 0 0 0 0;
+    visibility: visible;
+}
+
+.dropdown label:first-child {
+    grid-column: 2;
+    visibility: visible;
+}
+
+.dropdown input[type=range] {
+    height: 150%;
+    width: 40%;
+    visibility: visible;
+}
+
+.dropdown h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0 0 0 0;
+    visibility: visible;
+}
+
 /* ================FOOTER================*/
 .footer {
     background-color: #ffc917;
     height: 13vh;
+    width: 100%;
     bottom: 0;
+    position: fixed;
 }
 
 footer ul {
@@ -228,7 +292,7 @@ footer ul {
 }
 
 /*=========================detail page====================*/
-.detailpage{
+.detailpage {
     display: grid;
     grid-template-columns: 1fr;
     margin: 3em 0 0 0;
@@ -237,19 +301,19 @@ footer ul {
 }
 
 
-.detailpage img{
-    max-width: 100VW;   
+.detailpage img {
+    max-width: 100VW;
 }
 
-.detailpage h1{
+.detailpage h1 {
     margin: 1em 0 0 1em;
 }
 
-.detailpage p{
+.detailpage p {
     margin: 0 1.5em 0 1.5em;
 }
 
-.detailpage a{
+.detailpage a {
     margin: 2em 0 0 2em;
     padding: 0.8em 0 0 1em;
     z-index: 2;
@@ -418,14 +482,14 @@ footer ul {
         text-decoration: none;
         color: #003082;
     }
-    
+
     /*===================einde first item stylen=================*/
 
     main section article {
         width: 100%;
     }
 
- main form {
+    main form {
         background-color: #ffc917;
         padding 1em;
         margin 4em 0 0 0;
@@ -437,80 +501,94 @@ footer ul {
         display: grid;
         grid-template-columns: 10% 80% 10%;
     }
-    
-    main form input{
-        grid-column:2;
+
+    main form input {
+        grid-column: 2;
     }
+
     main form input[type=checkbox] {
         grid-column: 1;
     }
-    main form input[type=input]{
+
+    main form input[type=input] {
         height: 100%;
         margin: 0 0 1em 0;
     }
-    main form label{
+
+    main form label {
         grid-column: 2;
         margin: 0 0 0 -2em;
     }
-    main form p{
+
+    main form p {
         grid-column: 2;
         height: 20%;
         margin: 0 0 0 0;
     }
-    
+
     main form label:first-child {
         grid-column: 2;
     }
-    input[type=range]{
+
+    input[type=range] {
         height: 150%;
         width: 40%;
     }
-    main form h3{
+
+    main form h3 {
         grid-column-start: 1;
         grid-column-end: 4;
         margin: 0 0 0 0;
     }
-    
+
     .footer {
         height: 4em;
 
     }
-    
-    
+
+
     /*=========================detail page====================*/
-.detailpage{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100VW;
-    margin: -1em 0 0 0;
-    background-color: white;
-}
+    .detailpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10em 10em;
+        width: 100VW;
+        margin: -1em 0 0 0;
+        background-color: white;
+    }
 
 
-.detailpage img{
-    max-width: 100VW;   
-}
+    .detailpage img {
+        max-width: 100%;
+        max-height: 20em;
+        grid-column: 1;
+        margin: 0 0 0 1em;
+    }
 
-.detailpage h1{
-    margin: 100% 0 0 1em;
-    position: relative;
-}
+    .detailpage h1 {
+        grid-column: 2;
+    }
 
-.detailpage p{
-    margin: 3em 1.5em 1em 1.5em;
-}
+    .detailpage p {
+        margin: -8em 0 0 1em;
+        padding: 2em;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 25em;
+    }
 
-.detailpage a{
-    margin: 2em 0 0 2em;
-    padding: 0.8em 0 0 1em;
-    position: fixed;
-    background-color: #ffc917;
-    width: 5em;
-    height: 3em;
-    border-radius: 15px;
-    text-decoration: none;
-    color: #003082;
-}
+    .detailpage a {
+        margin: 2em 0 0 4em;
+        padding: 0.8em 0 0 1em;
+        position: fixed;
+        background-color: #ffc917;
+        width: 5em;
+        height: 3em;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #003082;
+    }
 }
 
 /*=========================Desktop====================*/
@@ -660,7 +738,7 @@ footer ul {
         }
     }
 
-    main section article:first-child footer:hover{
+    main section article:first-child footer:hover {
         animation-name: YellowHover;
         animation-duration: 0.5s;
 
@@ -678,7 +756,7 @@ footer ul {
         width: 100%;
     }
 
-    main form {
+    .dropdown {
         background-color: #ffc917;
         margin: 1em 1em 0em 3em;
         width: 80%;
@@ -691,42 +769,91 @@ footer ul {
         display: grid;
         grid-template-columns: 10% 80% 10%;
     }
-    
-    main form input{
-        grid-column:2;
+
+    .dropdown input {
+        grid-column: 2;
     }
-    main form input[type=checkbox] {
+
+    .dropdown input[type=checkbox] {
         grid-column: 1;
     }
-    main form input[type=input]{
+
+    .dropdown input[type=input] {
         height: 80%;
         margin: -1em 0 0 0;
     }
-    main form label{
+
+   .dropdown label {
         grid-column: 2;
         margin: 0 0 -1em 0;
     }
-    main form p{
+
+    .dropdown p {
         grid-column: 2;
         height: 20%;
         margin: -1.5em 0 0 0;
     }
-    
-    main form label:first-child {
+
+   .dropdown label:first-child {
         grid-column: 2;
     }
-    input[type=range]{
-        height: 20%   
+
+    .dropdown input[type=range] {
+        height: 20%
     }
-    main form h3{
+
+    .dropdown h3 {
         grid-column-start: 1;
         grid-column-end: 4;
         margin: -1em 0 0 0;
     }
-    
+
     .footer {
         height: 4em;
 
+    }
+
+    /*=========================detail page====================*/
+    .detailpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10em 10em;
+        width: 100VW;
+        margin: -1em 0 0 0;
+        background-color: white;
+    }
+
+
+    .detailpage img {
+        max-width: 100%;
+        max-height: 20em;
+        grid-column: 1;
+        margin: 0 0 0 3em;
+    }
+
+    .detailpage h1 {
+        grid-column: 2;
+    }
+
+    .detailpage p {
+        margin: -8em 0 0 1em;
+        padding: 2em;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 25em;
+    }
+
+    .detailpage a {
+        margin: 2em 0 0 4em;
+        padding: 0.8em 0 0 1em;
+        position: fixed;
+        background-color: #ffc917;
+        width: 5em;
+        height: 3em;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #003082;
     }
 
 }
