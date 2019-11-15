@@ -173,22 +173,22 @@ main article footer {
 }
 
 @keyframes Bluebuttons {
-        from {
-            color: #003082;
-        }
-
-        to {
-            color: blue;
-            font-size: 1.2em;
-        }
+    from {
+        color: #003082;
     }
+
+    to {
+        color: blue;
+        font-size: 1.2em;
+    }
+}
 
 main article footer a {
     text-decoration: none;
     color: #003082;
 }
 
-main article footer a:hover{
+main article footer a:hover {
     animation-name: Bluebuttons;
     animation-duration: 0.5s;
 }
@@ -212,7 +212,7 @@ main form {
     padding: 1em;
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    
+
 }
 
 main form input {
@@ -230,6 +230,7 @@ main form p {
 main form h3 {
     visibility: hidden;
 }
+
 main form label:first-child {
     grid-column: 2;
     visibility: hidden;
@@ -253,7 +254,7 @@ main form a {
     grid-template-columns: 10% 80% 10%;
 }
 
-.dropdown a{
+.dropdown a {
     grid-column: 3;
     visibility: visible;
 }
@@ -821,7 +822,7 @@ footer ul {
         margin: -1em 0 0 0;
     }
 
-   .dropdown label {
+    .dropdown label {
         grid-column: 2;
         margin: 0 0 -1em 0;
     }
@@ -832,7 +833,7 @@ footer ul {
         margin: -1.5em 0 0 0;
     }
 
-   .dropdown label:first-child {
+    .dropdown label:first-child {
         grid-column: 2;
     }
 
@@ -893,11 +894,12 @@ footer ul {
         text-decoration: none;
         color: #003082;
     }
+
     .detailpage a:hover {
         animation-name: YellowHover;
         animation-duration: 0.5s;
 
     }
-    }
+}
 
 }
