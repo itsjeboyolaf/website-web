@@ -227,6 +227,42 @@ footer ul {
     justify-content: space-between;
 }
 
+/*=========================detail page====================*/
+.detailpage{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3em 0 0 0;
+    z-index: 0;
+    background-color: white;
+}
+
+
+.detailpage img{
+    max-width: 100VW;   
+}
+
+.detailpage h1{
+    margin: 1em 0 0 1em;
+}
+
+.detailpage p{
+    margin: 0 1.5em 0 1.5em;
+}
+
+.detailpage a{
+    margin: 2em 0 0 2em;
+    padding: 0.8em 0 0 1em;
+    z-index: 2;
+    position: fixed;
+    background-color: #ffc917;
+    width: 5em;
+    height: 3em;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #003082;
+}
+
+
 
 /*========================Tablet=====================*/
 @media only screen and (min-width: 600px) and (max-width: 55em) {
@@ -271,7 +307,7 @@ footer ul {
     main h1 {
         grid-column-start: 2;
         grid-column-end: 4;
-        margin: 0;
+        margin: 0 0 -4em 0;
 
     }
 
@@ -439,9 +475,44 @@ footer ul {
         height: 4em;
 
     }
-
-
+    
+    
+    /*=========================detail page====================*/
+.detailpage{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100VW;
+    margin: -1em 0 0 0;
+    background-color: white;
 }
+
+
+.detailpage img{
+    max-width: 100VW;   
+}
+
+.detailpage h1{
+    margin: 100% 0 0 1em;
+    position: relative;
+}
+
+.detailpage p{
+    margin: 3em 1.5em 1em 1.5em;
+}
+
+.detailpage a{
+    margin: 2em 0 0 2em;
+    padding: 0.8em 0 0 1em;
+    position: fixed;
+    background-color: #ffc917;
+    width: 5em;
+    height: 3em;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #003082;
+}
+}
+
 /*=========================Desktop====================*/
 @media only screen and (min-width: 56em) {
 
