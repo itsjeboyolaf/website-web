@@ -1,6 +1,13 @@
 /* Door het hele document heen gebruik ik grid en flex dit heb ik van:
 https://css-tricks.com/snippets/css/complete-guide-grid/
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Ook heb ik info gezocht over animaties:
+https://www.w3schools.com/css/css3_animations.asp
+
+en wat java script:
+https://www.w3schools.com/howto/howto_js_toggle_class.asp
+w3schools.com/jsref/met_document_queryselector.asp
 */
 
 
@@ -88,6 +95,7 @@ nav a {
 /* ================MAIN================*/
 main {
     margin-top: -1em;
+    margin-bottom: 4em;
 }
 
 main h1 {
@@ -106,7 +114,7 @@ main section article {
     overflow: hidden;
     margin-top: 1em;
     display: grid;
-    max-height: 50vh;
+    height: 50VH;
     width: 90vw;
     grid-template-rows: 40% 15% 30% 15%;
     margin: auto;
@@ -162,10 +170,28 @@ main article footer {
     margin: 1em 0 0 1em;
 }
 
+@keyframes Bluebuttons {
+        from {
+            color: #003082;
+        }
+
+        to {
+            color: blue;
+            font-size: 1.2em;
+        }
+    }
+
 main article footer a {
     text-decoration: none;
     color: #003082;
 }
+
+main article footer a:hover{
+    animation-name: Bluebuttons;
+    animation-duration: 0.5s;
+}
+
+
 
 /*====================FORM (filter)==============*/
 /* bronnen :
@@ -292,7 +318,6 @@ main form a {
     width: 100%;
     bottom: 0;
     position: fixed;
-    margin-top 2em;
 }
 
 footer ul {
@@ -399,6 +424,7 @@ footer ul {
         grid-column-start: 1;
         grid-column-end: 3;
         display: grid;
+        height: 50VH;
         grid-template-rows: 25% 25% 25% 25%;
         grid-template-columns: 1fr 1fr;
         background-image: url(images/moe.jpg);
@@ -661,6 +687,7 @@ footer ul {
 
     /*============== First item gerestyled voor desktop =================*/
     main section article:first-child {
+        height: 50VH;
         grid-column-start: 1;
         grid-column-end: 3;
         display: grid;
@@ -668,7 +695,6 @@ footer ul {
         grid-template-columns: 1fr 1fr;
         background-image: url(images/moe.jpg);
         background-size: cover;
-        height: 100%;
 
     }
 
@@ -864,6 +890,12 @@ footer ul {
         border-radius: 15px;
         text-decoration: none;
         color: #003082;
+    }
+    .detailpage a:hover {
+        animation-name: YellowHover;
+        animation-duration: 0.5s;
+
+    }
     }
 
 }
