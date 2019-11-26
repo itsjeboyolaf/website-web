@@ -229,28 +229,28 @@ main form {
 
 main form input {
     visibility: hidden;
-    transition-delay: .5s;
+    transition-delay: 0s;
 }
 
 main form label {
     visibility: hidden;
-    transition-delay: .5s;
+    transition-delay: 0s;
 }
 
 main form p {
     visibility: hidden;
-    transition-delay: .5s;
+    transition-delay: 0s;
 }
 
 main form h3 {
     visibility: hidden;
-    transition-delay: .5s;
+    transition-delay: 0s;
 }
 
 main form label:first-child {
     grid-column: 2;
     visibility: hidden;
-    transition-delay: .5s;
+    transition-delay: 0s;
 }
 
 .dropdown {
@@ -264,35 +264,34 @@ main form label:first-child {
     padding: 1em;
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    transition-delay: .10s;
-}
-
-.dropdown a {
-    grid-column: 3;
-    visibility: visible;
+    transition: heigth, .5s;
 }
 
 
 .dropdown input {
     grid-column: 2;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 .dropdown input[type=checkbox] {
     grid-column: 1;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 .dropdown input[type=input] {
     height: 100%;
     margin: 0 0 0 0;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 .dropdown input[type=input]:active {
     border-style: solid;
     border-color: #ffc917;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 
@@ -300,6 +299,7 @@ main form label:first-child {
     grid-column: 2;
     margin: 0 0 0 0;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 .dropdown p {
@@ -307,17 +307,20 @@ main form label:first-child {
     height: 20%;
     margin: 0 0 0 0;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 .dropdown label:first-child {
     grid-column: 2;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 .dropdown input[type=range] {
     height: 150%;
     width: 40%;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 .dropdown h3 {
@@ -325,6 +328,7 @@ main form label:first-child {
     grid-column-end: 4;
     margin: 0 0 0 0;
     visibility: visible;
+    transition-delay: .5s;
 }
 
 /* ================FOOTER================*/
