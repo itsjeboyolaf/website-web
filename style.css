@@ -13,6 +13,15 @@ Maar de belangrijkste bron is natuurlijk Joost ;P
 */
 
 
+@font-face {
+  font-family: 'NSSans';
+  src: url('fonts/NSSans.eot'); /* IE9 Compat Modes */
+  src: url('fonts/NSSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/NSSans.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/NSSans.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/NSSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/NSSans.svg') format('svg'); /* Legacy iOS */
+}
 * {
     box-sizing: border-box;
     font-family: "nssans";
@@ -390,6 +399,7 @@ footer ul {
         white-space: nowrap;
         margin: 1em 3em 0 0;
         text-align: center;
+        color: #003082
     }
 
     nav ul {

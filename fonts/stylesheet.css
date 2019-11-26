@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'NS Sans';
+    src: url('NSSans.eot');
+    src: url('NSSans.eot?#iefix') format('embedded-opentype'),
+        url('NSSans.woff2') format('woff2'),
+        url('NSSans.woff') format('woff'),
+        url('NSSans.ttf') format('truetype'),
+        url('NSSans.svg#NSSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NS Sans';
+    src: url('NSSans-Bold.eot');
+    src: url('NSSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NSSans-Bold.woff2') format('woff2'),
+        url('NSSans-Bold.woff') format('woff'),
+        url('NSSans-Bold.ttf') format('truetype'),
+        url('NSSans-Bold.svg#NSSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
