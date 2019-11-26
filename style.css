@@ -104,9 +104,18 @@ main h1 {
     margin: 2em 0em -2em 0.5em;
     color: #003082;
 }
+main button{
+    position: absolute;
+    right: 0;
+    top: 3.5em;
+    border: none;
+    font-size: 1em;
+    background-color: #ffc917;
+    padding: 0.5em 1em 0.5em 1em
+}
 
 main form {
-    margin: 4em 0 0 0;
+    margin: 5em 0 0 0;
     height: 40VH;
     background-color: #ffc917;
 }
@@ -367,7 +376,7 @@ footer ul {
 
 
 /*========================Tablet=====================*/
-@media only screen and (min-width: 600px) and (max-width: 55em) {
+@media only screen and (min-width: 600px) and (max-width: 56em) {
     .TopBar li a {
         visibility: visible;
         white-space: nowrap;
@@ -410,8 +419,17 @@ footer ul {
         grid-column-start: 2;
         grid-column-end: 4;
         margin: 0 0 -4em 0;
-
     }
+    
+    main button{
+    position: absolute;
+    right: 0;
+    top: 5.4em;
+    border: none;
+    font-size: 1em;
+    background-color: #ffc917;
+    padding: 0.5em 1em 0.5em 1em
+}
 
     main section {
         margin-top: 1em;
@@ -678,6 +696,10 @@ footer ul {
         margin: 0em 0em 0em 1.5em;
 
     }
+    
+    main button{
+    visibility: hidden;
+}
 
     main section {
         margin-top: 1em;
@@ -795,7 +817,7 @@ footer ul {
         width: 100%;
     }
 
-    .dropdown {
+    .dropdown, main form {
         background-color: #ffc917;
         margin: 1em 1em 0em 3em;
         width: 80%;
@@ -809,42 +831,50 @@ footer ul {
         grid-template-columns: 10% 80% 10%;
     }
 
-    .dropdown input {
+    .dropdown input, main form input {
         grid-column: 2;
+        visibility: visible;
     }
 
-    .dropdown input[type=checkbox] {
+    .dropdown input[type=checkbox], main form input[type=checkbox] {
         grid-column: 1;
+        visibility: visible;
     }
 
-    .dropdown input[type=input] {
+    .dropdown input[type=input], main form input[type=input] {
         height: 80%;
-        margin: -1em 0 0 0;
+        margin: 0 0 0 0;
+        visibility: visible;
     }
 
-    .dropdown label {
+    .dropdown label, main form label {
         grid-column: 2;
         margin: 0 0 -1em 0;
+        visibility: visible;
     }
 
-    .dropdown p {
+    .dropdown p, main form p {
         grid-column: 2;
         height: 20%;
         margin: -1.5em 0 0 0;
+        visibility: visible;
     }
 
-    .dropdown label:first-child {
+    .dropdown label:first-child, main form label:first-child {
         grid-column: 2;
+        visibility: visible;
     }
 
-    .dropdown input[type=range] {
-        height: 20%
+    .dropdown input[type=range], main form input[type=range] {
+        height: 20%;
+        visibility: visible;
     }
 
-    .dropdown h3 {
+    .dropdown h3, main form h3 {
         grid-column-start: 1;
         grid-column-end: 4;
         margin: -1em 0 0 0;
+        visibility: visible;
     }
 
     .footer {
