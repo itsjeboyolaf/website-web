@@ -15,16 +15,26 @@ Maar de belangrijkste bron is natuurlijk Joost ;P
 
 @font-face {
   font-family: 'NSSans';
-  src: url('fonts/NSSans.eot'); /* IE9 Compat Modes */
-  src: url('fonts/NSSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/NSSans.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/NSSans.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/NSSans.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/NSSans.svg') format('svg'); /* Legacy iOS */
+  src: url('fonts/NSSans.eot');
+  src: url('fonts/NSSans.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NSSans.woff2') format('woff2'), 
+       url('fonts/NSSans.woff') format('woff'), 
+       url('fonts/NSSans.ttf')  format('truetype'), 
+       url('fonts/NSSans.svg') format('svg'); 
 }
+
+@font-face {
+  font-family: 'NSSans-Bold';
+  src: url('fonts/NSSans-Bold.eot');
+  src: url('fonts/NSSans-Bold.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/NSSans-Bold.woff2') format('woff2'), 
+       url('fonts/NSSans-Bold.woff') format('woff'), 
+       url('fonts/NSSans-Bold.ttf')  format('truetype'),
+       url('fonts/NSSans-Bold.svg') format('svg');
+}
+
 * {
     box-sizing: border-box;
-    font-family: "nssans";
 }
 
 body {
@@ -34,6 +44,7 @@ body {
     display: grid;
     grid-template-columns: 100vw;
     background-color: #e6e6e9;
+    font-family: "NSSans";
 }
 
 /* ================HEADER================*/
@@ -114,6 +125,7 @@ main {
 main h1 {
     margin: 2em 0em -2em 0.5em;
     color: #003082;
+    font-family: "NSSans-bold";
 }
 main button{
     position: absolute;
@@ -343,16 +355,20 @@ main form label:first-child {
 /* ================FOOTER================*/
 .footer {
     background-color: #ffc917;
-    height: 13vh;
+    height: 10vh;
     width: 100%;
     bottom: 0;
     position: fixed;
 }
 
-footer ul {
+.footer ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+.footer ul li{
+    padding: .5em;
 }
 
 /*=========================detail page====================*/
