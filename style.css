@@ -133,6 +133,7 @@ main button{
     top: 3.5em;
     border: none;
     font-size: 1em;
+    color: #003082;
     background-color: #ffc917;
     padding: 0.5em 1em 0.5em 1em
 }
@@ -266,12 +267,14 @@ main form p {
 main form h3 {
     visibility: hidden;
     transition-delay: 0s;
+    font-family: "NSSans-bold";
 }
 
 main form label:first-child {
     grid-column: 2;
     visibility: hidden;
     transition-delay: 0s;
+    font-family: "NSSans-bold";
 }
 
 .dropdown {
@@ -496,6 +499,7 @@ main form label:first-child {
         height: 100%;
         background-color: #ffc917;
         margin: 2em 0em 0em 1em;
+        padding-top: 1em
 
     }
 
@@ -510,7 +514,7 @@ main form label:first-child {
         color: white;
         font-size: 1.3em;
         margin: 0 0 0 1em;
-
+        font-family: "NSSans-bold";
         text-align: center;
         max-height: 50%;
         color: #003082;
@@ -519,7 +523,7 @@ main form label:first-child {
     main section article:first-child p {
         font-size: 0.9em;
         padding: 0;
-        margin: -2em 0em 0em 2.5em;
+        margin: -6em 0em 0em 2.5em;
         grid-row: 3;
         height: 90%;
         width: 80%;
@@ -535,6 +539,7 @@ main form label:first-child {
         grid-column-end: 3;
         margin: 3em 0 0 10em;
         font-size: 0.8em;
+        padding-top: 1em;
 
     }
 
@@ -767,6 +772,7 @@ main form label:first-child {
         width: 50%;
         background-color: #ffc917;
         margin: 2em 0em 0em 1em;
+        
 
     }
 
@@ -781,7 +787,7 @@ main form label:first-child {
         color: white;
         font-size: 1.3em;
         margin: 1em;
-
+        font-family: "NSSans-bold";
         text-align: center;
         max-height: 50%;
         color: #003082;
