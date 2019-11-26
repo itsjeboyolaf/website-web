@@ -15,6 +15,7 @@ Maar de belangrijkste bron is natuurlijk Joost ;P
 
 * {
     box-sizing: border-box;
+    font-family: "nssans";
 }
 
 body {
@@ -60,6 +61,7 @@ nav ul {
     height: 100%;
     width: 2.5em;
     display: block;
+    fill: #003082;
 }
 
 
@@ -656,6 +658,7 @@ footer ul {
         white-space: nowrap;
         margin: 1em 3em 0 0;
         text-align: center;
+        color: #003082;
     }
 
     nav ul {
@@ -665,7 +668,7 @@ footer ul {
 
     .TopBar li:first-child {
         margin-right: auto;
-        margin-left: 7.5em;
+        margin-left: 22VW;
     }
 
     .TopBar li a svg {
@@ -687,13 +690,13 @@ footer ul {
     main {
         margin-top: 5em;
         display: grid;
-        grid-template-columns: 5vw 15VW 5VW 70VW 5VW;
+        grid-template-columns: 5VW 15VW 5VW 70VW 5VW;
     }
 
     main h1 {
         grid-column-start: 2;
         grid-column-end: 5;
-        margin: 0em 0em 0em 1.5em;
+        margin: 0 0 0 20VW;
 
     }
     
