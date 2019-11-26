@@ -223,33 +223,34 @@ main form {
     padding: 1em;
     display: grid;
     grid-template-columns: 10% 80% 10%;
+    transition: heigth, .5s;
 
 }
 
 main form input {
     visibility: hidden;
+    transition-delay: .5s;
 }
 
 main form label {
     visibility: hidden;
+    transition-delay: .5s;
 }
 
 main form p {
     visibility: hidden;
+    transition-delay: .5s;
 }
 
 main form h3 {
     visibility: hidden;
+    transition-delay: .5s;
 }
 
 main form label:first-child {
     grid-column: 2;
     visibility: hidden;
-}
-
-main form a {
-    visibility: visible;
-    grid-column: 3;
+    transition-delay: .5s;
 }
 
 .dropdown {
@@ -263,6 +264,7 @@ main form a {
     padding: 1em;
     display: grid;
     grid-template-columns: 10% 80% 10%;
+    transition-delay: .10s;
 }
 
 .dropdown a {
@@ -430,7 +432,7 @@ footer ul {
     border: none;
     font-size: 1em;
     background-color: #ffc917;
-    padding: 0.5em 1em 0.5em 1em
+    padding: 0.5em 1em 0.5em 1em; 
 }
 
     main section {
